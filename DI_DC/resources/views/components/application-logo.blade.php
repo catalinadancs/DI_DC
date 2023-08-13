@@ -1,0 +1,1 @@
+<img src="{{ asset('logo/cooltext440451177962244.png') }}" width="100px">
