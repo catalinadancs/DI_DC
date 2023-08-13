@@ -55,7 +55,7 @@
       </ul>
     </div>
     <div class="col">
-    <a href="{{ url('/aboutus') }}" class="btn btn-light">DI🗲DC</a>
+    <a href="{{ url('/aboutus') }}" class="btn btn-light">DI&#x26A1;DC</a>
       <p>Câteva informații despre echipa minunată din spatele acestei aplicații</p>
     </div>
   </div>

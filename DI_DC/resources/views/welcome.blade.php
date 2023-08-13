@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to DI🗲DC</title>
+    <title>Welcome to DI&#x26A1;DC</title>
     <!-- Add Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -78,7 +78,7 @@
 <body>
 <div class="container">
     <header class="header-buttons">
-        <h1>Welcome to DI🗲DC Facturing App</h1>
+        <h1>Welcome to DI&#x26A1;DC Facturing App</h1>
     </header>
 
     <div class="bottom-buttons">
