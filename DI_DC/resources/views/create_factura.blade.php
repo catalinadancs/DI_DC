@@ -43,7 +43,7 @@
                                 </div>
                                 
                                 <div class="flex items-center gap-4">
-                                    <a href="{{ url('/factura') }}" class="btn btn-outline-success" type="submit">Salvare</a>
+                                    <a href="{{ url('/factura') }}" class="btn btn-success" type="submit">Salvare</a>
                                 </div>
                             </form>
                         </section>

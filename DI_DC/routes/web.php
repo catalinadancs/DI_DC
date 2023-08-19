@@ -3,7 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\FurnizorController;
 use App\Http\Controllers\ProdusController;
-use App\Http\Controllers\CumparatorController;
+use App\Http\Controllers\ClientController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -49,18 +49,40 @@ Route::get('/aboutus', function () {
 
 Route::match(['get', 'post'], '/furnizor', [FurnizorController::class, 'dataa'])->name('furnizor');
 
-Route::post("produs",[ProdusController::class,'fct']);
-Route::get('/produs', function() {
+//Route::post('produs',[ProdusController::class,'fct']);
+/* Route::get('/produs', function() {
     return view('produs');
-});
+}); */
 
-Route::post("cumparator",[CumparatorController::class,'fct']);
-Route::get('/cumparator', function() {
-    return view('cumparator');
+/* Route::post('client',[CumparatorController::class,'fct']);
+Route::get('/client', function() {
+    return view('client');
+}); */
+
+Route::get('/produs',[ProdusController::class,'index'])->name('produs.index');
+Route::get('/produs/adaugare',[ProdusController::class,'creare'])->name('produs.create');
+Route::post('/produs',[ProdusController::class,'store'])->name('produs.store');
+
+Route::get('/client',[ClientController::class,'index'])->name('client.index');
+Route::get('/client/adaugare',[ClientController::class,'creare'])->name('client.create');
+Route::post('/client',[ClientController::class,'store'])->name('client.store');
+
+/* Route::get('/form_produs',function(){
+    return view('/form_produs');
 });
+Route::post('form_produs',[ProdusController::class,'store'])->name('produs.store'); */
+//Route::middleware(['web'])->post('form_produs', 'ProdusController@produs.store');
+
+
+/* Route::get('/form_furnizor',function(){
+    return view('/form_furnizor');
+}); */
+
+/* Route::get('/form_client',function(){
+    return view('/form_client');
+}); */
 
 Route::get('/create_factura', function () {
     return view('create_factura');
 });
-
 require __DIR__.'/auth.php';

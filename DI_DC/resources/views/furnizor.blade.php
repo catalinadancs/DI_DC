@@ -74,7 +74,7 @@
                                             <input class="form-control" id="iban" name="iban" placeholder="IBAN" required></input>
                                         </div>
                                         <div class="flex items-center gap-4">
-                                            <button class="btn btn-outline-success" type="submit">Save</button>
+                                            <button class="btn btn-success" type="submit">Save</button>
                                         </div>
                                     </form>
                                     </section>
@@ -128,7 +128,7 @@
                                             <input class="form-control" id="iban_firma" name="iban" placeholder="IBAN" required></input>
                                         </div>
                                         <div class="flex items-center gap-4">
-                                            <button class="btn btn-outline-success" type="submit">Save</button>
+                                            <button class="btn btn-success" type="submit">Save</button>
                                         </div>
                                     </form>
                                     </section>

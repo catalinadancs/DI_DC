@@ -1,5 +1,5 @@
 <x-app-layout>
-   
+    
 
 <style>
     
@@ -34,7 +34,7 @@
       <button class="btn btn-light">Clienți</button>
     </div>
     <div class="col">
-      <button class="btn btn-light">Lunare</button>
+      <button class="btn btn-light">Rapoarte lunare</button>
     </div>
   </div>
 </div>

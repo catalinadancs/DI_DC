@@ -1,4 +1,6 @@
 <x-app-layout>
+    
+
 <style>
     
     .col{
@@ -29,11 +31,11 @@
 <div class="container">
   <div class="col-3">
     <div class="col">
-    <a href="{{ url('/cumparator') }}" class="btn btn-light">Clienți</a>
+    <a href="{{ route('client.index') }}" class="btn btn-light">Clienți</a>
       <!-- <button class="btn btn-light">Clienți</button> -->
     </div>
     <div class="col">
-    <a href="{{ url('/produs') }}" class="btn btn-light">Produse/Servicii</a>
+    <a href="{{ route('produs.index') }}" class="btn btn-light">Produse/Servicii</a>
       <!-- <button class="btn btn-light">Produse/Servicii</button> -->
     </div>
   </div>
