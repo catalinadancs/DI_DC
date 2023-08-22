@@ -28,7 +28,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h1 class="card-title">Informatii furnizor</h1>
-                                    </header>
+                                    
                                     <form id="send-verification" method="post" action="http://127.0.0.1:8000/email/verification-notification">
                                         <input type="hidden" name="_token" value="EZjLzxMXgLsE2Zm7Oh5B8E82KsvomGzZzD67eT0g">
                                     </form>
@@ -77,7 +77,7 @@
                                             <button class="btn btn-success" type="submit">Save</button>
                                         </div>
                                     </form>
-                                    </section>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -89,7 +89,7 @@
                                     <h1 class="card-title">
                                         Informatii firma
                                     </h1>
-                                    </header>
+                                    
                                     <form method="POST" action="{{ route('furnizor') }}">
                                         <div class="mb-3">
                                             <label for="nume_firma" class="form-label">Nume</label>
@@ -131,7 +131,7 @@
                                             <button class="btn btn-success" type="submit">Save</button>
                                         </div>
                                     </form>
-                                    </section>
+                                    
                                 </div>
                             </div>
                         </div>
