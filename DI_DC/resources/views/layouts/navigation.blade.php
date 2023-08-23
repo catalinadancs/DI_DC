@@ -6,9 +6,39 @@
     <title>DI/DC</title>
     <!-- Include Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+ @media (prefers-color-scheme: dark) {
+            .container-fluid {
+                background-color: #1f2937;
+                color: #FFFFFF;
+            }
+            
+            .navbar-nav .nav-link.dropdown-toggle {
+                color: #FFFFFF;
+            }
+            .navbarNav{
+                background-color: #1f2937;
+                color: #FFFFFF;
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .container-fluid {
+                background-color: #ffffff;
+                color: #000000;
+            }
+        }
+    </style>
 </head>
+
+
+
+
+
+
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom border-gray-100 dark:border-gray-700">
+    <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
             <!-- Logo -->
             <a class="navbar-brand" href="{{ route('dashboard') }}">

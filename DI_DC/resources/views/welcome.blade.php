@@ -15,8 +15,6 @@
             margin: 0;
         }
 
-
-
         .container {
             max-width: 500px;
             text-align: center;
@@ -24,21 +22,8 @@
             border-radius: 20px;
         }
 
-        .light .container {
-        background-color: #e5e5e5;
-        color: #fff;
-        }
-        .dark .container {
-        background-color: #242526;
-        color: #000;}
-
-
-
-
-
-
         .header-buttons {
-            background-color: #4f46e5;
+            background-color: #290aef;
             color: #fff;
             padding: 10px;
             font-size: 24px;
@@ -48,8 +33,26 @@
         }
 
 
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #111827;
+        color: #ffffff;
+         }
+    .container {
+        background-color: #1f2937;
+        color: #000;}
+        }
 
-
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #f3f4f6;
+        color: #000;
+         }
+    .container {
+        background-color: #ffffff;
+        color: #fff;
+         }
+        }
 
         .btn-login {
             font-size: 18px;
@@ -60,6 +63,7 @@
             color: #fff;
             transition: background-color 0.3s ease;
         }
+
         .btn-register {
             font-size: 18px;
             padding: 10px;
@@ -82,6 +86,7 @@
             background-color: #007bff;
             color: #fff;
         }
+
         .btn-login:hover {
             background-color: #0056b3;
         }
@@ -89,47 +94,6 @@
         .btn-register:hover {
             background-color: #4d4d4d;
         }
-
-
-
-        .dark {
-            background-color: #18191a;
-            color: #fff;
-        }
-        .light {
-            background-color: #fafafa;
-            color: #000;
-        }
-
-
-
-
-
-        .toggle-button {
-            position: fixed;
-        bottom: 20px;
-        right: 20px;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        }
-
-        .light .toggle-button {
-        background-color: #18191a;
-        color: #fff; 
-    }
-        .dark .toggle-button {
-        background-color: #fafafa; 
-        color: #000;}
-        
-
-
-
     </style>
 </head>
 <body>
@@ -150,29 +114,9 @@
             @endauth
         @endif
     </div>
-    
-    <!-- Add the toggle button -->
-    <button id="darkModeToggle" class="toggle-button"></button>
 </div>
 
 <!-- Add Bootstrap JS (optional) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-<script>
-    const darkModeToggle = document.getElementById('darkModeToggle');
-    const body = document.body;
-
-    // Check user's preferred color scheme and set initial mode
-    const initialMode = localStorage.getItem('colorMode') || 'light';
-    body.classList.add(initialMode);
-
-    darkModeToggle.addEventListener('click', () => {
-        body.classList.toggle('dark');
-        body.classList.toggle('light');
-
-        // Store the selected mode in localStorage
-        const newMode = body.classList.contains('dark') ? 'dark' : 'light';
-        localStorage.setItem('colorMode', newMode);
-    });
-</script>
 </body>
 </html>
