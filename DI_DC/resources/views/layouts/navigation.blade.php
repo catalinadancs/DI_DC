@@ -20,6 +20,25 @@
                 background-color: #1f2937;
                 color: #FFFFFF;
             }
+            .dropdown-menu.dropdown-menu-end{
+                background-color: #1f2937;
+                color: #FFFFFF;
+            }
+            a.dropdown-item,
+            button.dropdown-item{
+                background-color: #1f2937;
+                color: #FFFFFF;
+            }
+
+            a.dropdown-item:hover{
+                background-color:#555e6b;
+                color: #FFFFFF;
+            }
+
+            button.dropdown-item:hover{
+                background-color: #555e6b;
+                color: #FFFFFF;
+            }
         }
 
         @media (prefers-color-scheme: light) {
@@ -27,7 +46,21 @@
                 background-color: #ffffff;
                 color: #000000;
             }
+            a.dropdown-item:hover{
+                background-color: #d3d4d5;
+        color: #000000;
+            }
+
+            button.dropdown-item:hover{
+                background-color: #d3d4d5;
+        color: #000000;
+            }
+
+
+
         }
+
+
     </style>
 </head>
 

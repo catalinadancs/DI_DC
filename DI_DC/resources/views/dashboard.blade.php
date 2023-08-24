@@ -55,6 +55,11 @@
           background-color: #111827;
         color: #FFFFFF;
     }
+
+    a.btn.btn-light:hover{
+        background-color: #555e6b;
+        color: #fff;
+      }
     }
 @media (prefers-color-scheme: light) {
   body {
@@ -71,6 +76,10 @@
         }
   .col{
         background-color: #f3f4f6;
+        color: #000000;
+      }
+    a.btn.btn-light:hover{
+        background-color: #d3d4d5;
         color: #000000;
       }
     }
