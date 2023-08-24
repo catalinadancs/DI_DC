@@ -16,11 +16,43 @@
 
 </head>
 
+
+<style>
+
+
+@media (prefers-color-scheme: dark) {
+        h2, label, input {
+            color: #fff;
+        }
+
+        form {
+            color: #fff;
+        }
+        .form-control {
+        background-color: #111827;
+        color: #fff;
+    }
+
+    .form-control::placeholder {
+        color: #fff;
+        opacity: 0.6;
+      
+    }
+}
+@media (prefers-color-scheme: light) {
+
+    }
+
+
+
+</style>
+
+
 <body>
     <x-app-layout>
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6">
-                <div class="p-4 sm:p-8 bg-white dark:bg-gray-800 shadow sm:rounded-lg">
+                <div class="p-4 sm:p-8  dark:bg-gray-800 shadow sm:rounded-lg">
                     <div class="max-w-xl">
                         <section>
                             <header>

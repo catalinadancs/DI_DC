@@ -1,3 +1,36 @@
+
+<style>
+
+
+    @media (prefers-color-scheme: dark) {
+        section {
+        background-color: #1f2937;
+        color: #fff;
+    }
+    
+    /* Style the primary button */
+    .x-primary-button {
+        background-color: #4a5568;
+        color: #fff;
+        border-color: #4a5568;
+    }
+    
+    .x-primary-button:hover {
+        background-color: #2d3748;
+        border-color: #2d3748;
+    }
+    
+    }
+@media (prefers-color-scheme: light) {
+
+
+        }
+
+
+
+</style>
+
+
 <section>
     <header>
         <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">
@@ -48,8 +81,9 @@
         </div>
 
         <div class="flex items-center gap-4">
-            <x-primary-button>{{ __('Save') }}</x-primary-button>
-
+        <button type="submit" class="inline-flex items-center px-4 py-2 bg-gray-800 dark:bg-gray-400 border border-transparent rounded-md font-semibold text-xs text-white dark:text-gray-800 uppercase tracking-widest hover:bg-gray-700 dark:hover:bg-white focus:bg-gray-700 dark:focus:bg-white active:bg-gray-900 dark:active:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 transition ease-in-out duration-150">
+    Save
+</button>
             @if (session('status') === 'profile-updated')
                 <p
                     x-data="{ show: true }"

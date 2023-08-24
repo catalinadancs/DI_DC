@@ -16,9 +16,38 @@
 
 </head>
 
+
+
+
 <body>
 
     <x-app-layout>
+    <style>
+
+
+@media (prefers-color-scheme: dark) {
+    .card-body {
+        background-color: #1f2937;
+        color: #fff;}
+        
+        .form-control {
+        background-color: #111827;
+        color: #fff;
+    }
+
+    .form-control::placeholder {
+        color: #fff;
+        opacity: 0.6;
+}
+}
+@media (prefers-color-scheme: light) {
+
+    }
+
+
+
+</style>
+
 
         <div class="py-12">
             <div class="container">
