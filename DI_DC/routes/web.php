@@ -85,4 +85,6 @@ Route::post('form_produs',[ProdusController::class,'store'])->name('produs.store
 Route::get('/create_factura', function () {
     return view('create_factura');
 });
+
+Route::get('/send-mail', [App\Http\Controllers\EmailController::class, 'sendEmail']);
 require __DIR__.'/auth.php';
