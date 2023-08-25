@@ -31,7 +31,7 @@
         }
 
         .form-control {
-            color: #878b92 !important; /* Set the text color */
+            color: #fff !important; /* Set the text color */
             background-color: #111827 !important;
             border-color: #777 !important;
         }
@@ -50,7 +50,6 @@
         .btn:hover {
             background-color: #0056b3 !important;
             border-color: #0056b3 !important;
-        }
 }
 @media (prefers-color-scheme: light) {
    
