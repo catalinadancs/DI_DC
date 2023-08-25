@@ -39,6 +39,11 @@
         color: #fff;
         opacity: 0.6;
 }
+.form-control:focus {
+            background-color: #111827 !important;
+            border-color: #999 !important;
+            color:#fff;
+        }
 }
 @media (prefers-color-scheme: light) {
 

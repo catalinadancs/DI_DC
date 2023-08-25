@@ -20,27 +20,40 @@
 <style>
 
 
+
 @media (prefers-color-scheme: dark) {
+    body {
+            background-color: #333;
+        }
+
         h2, label, input {
-            color: #fff;
+            color: #fff !important;
         }
 
-        form {
-            color: #fff;
-        }
         .form-control {
-        background-color: #111827;
-        color: #fff;
-    }
+            color: #878b92 !important; /* Set the text color */
+            background-color: #111827 !important;
+            border-color: #777 !important;
+        }
 
-    .form-control::placeholder {
-        color: #fff;
-        opacity: 0.6;
-      
-    }
+        .form-control::placeholder {
+        color: #fff !important;
+        opacity: 0.6!important;
+        }
+
+        .btn {
+            color: #fff !important;
+            background-color: #007bff !important;
+            border-color: #007bff !important;
+        }
+
+        .btn:hover {
+            background-color: #0056b3 !important;
+            border-color: #0056b3 !important;
+        }
 }
 @media (prefers-color-scheme: light) {
-
+   
     }
 
 
@@ -62,8 +75,8 @@
                             </header>
                             <form>
                                 <div class="mb-3">
-                                    <label for="serie" class="form-label">Serie</label>
-                                    <input class="form-control" id="serie" name="serie" placeholder="Serie" required />
+                                        <label for="serie" class="form-label">Serie</label>
+                                        <input class="form-control" id="serie" name="serie" placeholder="Serie" required /> 
                                 </div>
                                 <div class="mb-3">
                                     <label for="data_emitere" class="form-label">Data emiterii</label>
