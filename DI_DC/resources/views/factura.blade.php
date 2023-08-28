@@ -6,11 +6,11 @@
     <title>Factura</title>
     </head>
 <x-app-layout>
-  
-        <style>
-    
 
-    
+        <style>
+
+
+
     .col{
         height: 200px;
     }
@@ -95,7 +95,7 @@
       <button class="btn btn-light">Vizualizare facturi</button>
     </div>
     <div class="col">
-      <button class="btn btn-light">Curs valutar</button>
+        <a href="{{ url('/cursvalutar') }}" class="btn btn-light">Curs valutar</a>
     </div>
   </div>
 </div>

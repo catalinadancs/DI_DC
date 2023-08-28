@@ -88,4 +88,9 @@ Route::get('/create_factura', function () {
 
 Route::get('/send-mail', [App\Http\Controllers\EmailController::class, 'sendEmail']);
 
+
+Route::get('/cursvalutar', function () {
+    return view('cursvalutar');
+});
+
 require __DIR__.'/auth.php';
