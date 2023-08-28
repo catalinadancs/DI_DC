@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\FurnizorController;
+use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\ProdusController;
 use App\Http\Controllers\ClientController;
 use Illuminate\Support\Facades\Route;
@@ -47,7 +47,10 @@ Route::get('/aboutus', function () {
     return view('aboutus');
 });
 
-Route::match(['get', 'post'], '/furnizor', [FurnizorController::class, 'dataa'])->name('furnizor');
+//Route::match(['get', 'post'], '/furnizor', [FurnizorController::class, 'dataa'])->name('furnizor');
+
+Route::get('/furnizor', [SettingsController::class, 'index'])->name('furnizor');
+Route::post('/furnizor',[SettingsController::class,'store'])->name('settings.store');
 
 //Route::post('produs',[ProdusController::class,'fct']);
 /* Route::get('/produs', function() {
@@ -85,4 +88,7 @@ Route::post('form_produs',[ProdusController::class,'store'])->name('produs.store
 Route::get('/create_factura', function () {
     return view('create_factura');
 });
+
+Route::get('/send-mail', [App\Http\Controllers\EmailController::class, 'sendEmail']);
+
 require __DIR__.'/auth.php';
