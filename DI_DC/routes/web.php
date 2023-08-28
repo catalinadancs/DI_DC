@@ -4,6 +4,9 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\ProdusController;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\FirmaController;
+use App\Http\Controllers\FacturaClientController;
+use App\Http\Controllers\FacturaFirmaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -76,6 +79,27 @@ Route::post('/client',[ClientController::class,'store'])->name('client.store');
 Route::post('form_produs',[ProdusController::class,'store'])->name('produs.store'); */
 //Route::middleware(['web'])->post('form_produs', 'ProdusController@produs.store');
 
+Route::get('/firma',[FirmaController::class,'index'])->name('firma.index');
+Route::get('/client/adaugaref',[FirmaController::Class,'creare'])->name('firma.create');
+Route::post('/firma',[FirmaController::class,'store'])->name('firma.store');
+
+Route::post('factura/crearefacturac',[FacturaClientController::class,'store'])->name('facturac.store');
+Route::post('factura/crearefacturaf',[FacturaFirmaController::class,'store'])->name('facturaf.store');
+
+Route::get('/furnizor', [SettingsController::class, 'index'])->name('furnizor');
+Route::post('/furnizor',[SettingsController::class,'store'])->name('settings.store');
+
+Route::get('/factura/index', function () {
+    return view('factura/index');
+});
+
+Route::get('/factura/crearefc', function () {
+    return view('factura/crearefacturac');
+});
+
+Route::get('/factura/creareff', function () {
+    return view('factura/crearefacturaf');
+});
 
 /* Route::get('/form_furnizor',function(){
     return view('/form_furnizor');
