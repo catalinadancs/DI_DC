@@ -22,7 +22,7 @@
         <div class="container">
 
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 Adaugare produs/serviciu
             </button>
 
@@ -32,7 +32,7 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="staticBackdropLabel">Adaugare produs/serviciu</h5>
-                            <button type="button" class="btn-outline-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div class="container">
@@ -82,8 +82,8 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
-                            <button class="btn btn-outline-success" type="submit">Trimite</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button class="btn btn-success" type="submit">Trimite</button>
                         </div>
                     </div>
                 </div>

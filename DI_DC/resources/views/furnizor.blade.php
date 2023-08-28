@@ -16,9 +16,43 @@
 
 </head>
 
+
+
+
 <body>
 
     <x-app-layout>
+    <style>
+
+
+@media (prefers-color-scheme: dark) {
+    .card-body {
+        background-color: #1f2937;
+        color: #fff;}
+        
+        .form-control {
+        background-color: #111827;
+        color: #fff;
+    }
+
+    .form-control::placeholder {
+        color: #fff;
+        opacity: 0.6;
+}
+.form-control:focus {
+            background-color: #111827 !important;
+            border-color: #999 !important;
+            color:#fff;
+        }
+}
+@media (prefers-color-scheme: light) {
+
+    }
+
+
+
+</style>
+
 
         <div class="py-12">
             <div class="container">
@@ -74,7 +108,7 @@
                                             <input class="form-control" id="iban" name="iban" placeholder="IBAN" required></input>
                                         </div>
                                         <div class="flex items-center gap-4">
-                                            <button class="btn btn-outline-success" type="submit">Save</button>
+                                            <button class="btn btn-success" type="submit">Save</button>
                                         </div>
                                     </form>
                                     
@@ -128,7 +162,7 @@
                                             <input class="form-control" id="iban_firma" name="iban" placeholder="IBAN" required></input>
                                         </div>
                                         <div class="flex items-center gap-4">
-                                            <button class="btn btn-outline-success" type="submit">Save</button>
+                                            <button class="btn btn-success" type="submit">Save</button>
                                         </div>
                                     </form>
                                     
