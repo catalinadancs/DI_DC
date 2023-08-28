@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('sp_factura', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('id_factura');
-            $table->foreign('id_factura')->references('id')->on('factura');
+            $table->foreign('id_factura')->references('id')->on('facturac');
             $table->unsignedBigInteger('id_produs');
             $table->foreign('id_produs')->references('id')->on('produs');
             $table->double('pret_produs', 10, 2)->unsigned();

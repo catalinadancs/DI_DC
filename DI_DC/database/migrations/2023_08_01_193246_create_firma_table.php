@@ -13,19 +13,15 @@ return new class extends Migration
     {
         Schema::create('firma', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('id_client');
-            $table->foreign('id_client')->references('id')->on('client');
-            $table->string('nume_firma');
-            $table->string('email_firma');
-            $table->char('telefon_firma', 10);
-            $table->string('adresa_firma');
+            $table->string('nume');
+            $table->string('email');
+            $table->char('telefon', 10);
+            $table->string('adresa');
             $table->string('judet');
             $table->string('reg_com');
             $table->string('cif');
-            $table->string('cui');
-            $table->string('banca_firma');
-            $table->char('iban_firma', 24);
-            $table->string('status'); 
+            $table->string('banca');
+            $table->char('iban', 24); 
             $table->timestamps();
         });
     }

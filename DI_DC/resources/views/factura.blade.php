@@ -89,7 +89,7 @@
 <div class="container">
   <div class="col-3">
     <div class="col">
-    <a href="{{ url('/create_factura') }}" class="btn btn-light">Creare factura</a>
+    <a href="{{ url('/factura/index') }}" class="btn btn-light">Creare factura</a>
     </div>
     <div class="col">
       <button class="btn btn-light">Vizualizare facturi</button>

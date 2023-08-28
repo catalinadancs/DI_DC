@@ -48,8 +48,9 @@
 
 
 
-        <div class="container mt-3">
-            <a href="{{route('client.create')}}" class="btn btn-primary">Adaugare client</a>
+        <div class="container">
+            <a href="{{route('client.create')}}" class="btn btn-primary">Adaugare client - PFA</a>
+            <a href="{{route('firma.create')}}" class="btn btn-primary">Adaugare client - SRL</a>
         </div>
         <div class="container mt-3">
             <h2>Lista clientilor</h2>
@@ -65,7 +66,6 @@
                         <th>Adresa</th>
                         <th>Banca</th>
                         <th>IBAN</th>
-                        <th>Status</th>
                         <!-- Adăugați mai multe coloane aici, dacă este necesar -->
                     </tr>
                 </thead>
@@ -81,7 +81,6 @@
                         <td>{{ $client->adresa }}</td>
                         <td>{{ $client->banca }}</td>
                         <td>{{ $client->iban }}</td>
-                        <td>{{ $client->status }}</td>
                     </tr>
                     @endforeach
                 </tbody>
