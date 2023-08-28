@@ -33,7 +33,7 @@
         .form-control {
             color: #fff !important; /* Set the text color */
             background-color: #111827 !important;
-            border-color: #777 !important;
+            border-color: #999 !important;
         }
 
         .form-control::placeholder {
@@ -51,6 +51,31 @@
             background-color: #0056b3 !important;
             border-color: #0056b3 !important;
         }
+        h3 {
+            color: #fff !important; /* Set the text color */
+            background-color: #1f2937 !important;
+            border-color: #777 !important;
+        }
+        .container {
+            color: #fff !important; /* Set the text color */
+            background-color: #1f2937 !important;
+            border-color: #777 !important;
+        }
+        input[type="date"],
+    select[name="status"],
+    select[name="categorie"],
+    select[name="tip"],
+    input[id="um"],
+    input[id="cantitate"],
+    th,
+    td {
+        background-color: #111827 !important;
+        color: #fff !important;
+        border-color: #999 !important;
+    }
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        filter: invert(1);
+    }
     }
 @media (prefers-color-scheme: light) {
    
@@ -68,6 +93,7 @@
         <div class="col">
             <div class="card-body">
                 <form method="post">
+                <div class="container">
                     <h3>Detalii factura</h3>
                             <div class="mb-3">
                                     <label for="nume" class="form-label">Nume sau CIF Client</label>
@@ -78,6 +104,8 @@
                                     <input type="text" class="form-control" id="pers_contact" name="pers_contact" placeholder="Persoana de contact" required />
                                 </div> -->
                                 <div class="mb-3">
+                                        <label for="serie" class="form-label">Serie</label>
+                                        <input class="form-control" id="serie" name="serie" placeholder="Serie" required /> 
                                     <label for="serie" class="form-label">Serie factura</label>
                                     <input type="text" class="form-control" id="serie" name="serie" placeholder="Serie factura" required />
                                 </div>
@@ -188,7 +216,7 @@
         </div>
     </div>
 </div>
-
+</div>
     </x-app-layout>
 
 </body>

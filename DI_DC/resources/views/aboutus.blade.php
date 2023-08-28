@@ -20,9 +20,12 @@
         background-color: #111827;
         color: #ffffff;
       }
-      .h1{
-        background-color: #1f2937;
-        color: #fff;
+      h1,
+      p{
+        color: #fff !important; /* Set the text color */
+            background-color: #1f2937 !important;
+            border-color: #777 !important;
+            text-align: center !important;
       }
     }
     

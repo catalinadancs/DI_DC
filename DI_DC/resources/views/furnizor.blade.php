@@ -13,32 +13,6 @@
 
     <!-- Add Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            .card-body {
-                background-color: #1f2937;
-                color: #fff;
-            }
-
-            .form-control {
-                background-color: #111827;
-                color: #fff;
-            }
-
-            .form-control::placeholder {
-                color: #fff;
-                opacity: 0.6;
-            }
-
-            .form-control:focus {
-                background-color: #111827 !important;
-                border-color: #999 !important;
-                color: #fff;
-            }
-        }
-
-        @media (prefers-color-scheme: light) {}
-    </style>
 </head>
 
 
@@ -46,6 +20,40 @@
 
 <body>
     <x-app-layout>
+    <style>
+
+
+@media (prefers-color-scheme: dark) {
+    .card {
+        background-color: #1f2937;
+        color: #fff;
+        border-color: #364050!important;}
+        
+        .form-control {
+        background-color: #111827;
+        color: #fff;
+        border-color: #364050;
+    }
+
+    .form-control::placeholder {
+        color: #fff;
+        opacity: 0.6;
+}
+.form-control:focus {
+            background-color: #111827 !important;
+            border-color: #999 !important;
+            color:#fff;
+        }
+}
+@media (prefers-color-scheme: light) {
+
+    }
+
+
+
+</style>
+
+
         <div class="py-12">
 
 
