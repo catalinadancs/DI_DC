@@ -51,6 +51,7 @@
             background-color: #0056b3 !important;
             border-color: #0056b3 !important;
 }
+}
 @media (prefers-color-scheme: light) {
    
     }

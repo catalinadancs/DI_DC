@@ -28,11 +28,13 @@
 @media (prefers-color-scheme: dark) {
     .card-body {
         background-color: #1f2937;
-        color: #fff;}
+        color: #fff;
+        border-color: #364050!important;}
         
         .form-control {
         background-color: #111827;
         color: #fff;
+        border-color: #364050;
     }
 
     .form-control::placeholder {
