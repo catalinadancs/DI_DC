@@ -46,7 +46,8 @@
          }
       .col .btn {
         background-color: #1f2937;
-        color: #FFFFFF;}
+        color: #FFFFFF;
+        border-color: #364050;}
       .ul{
         background-color: #1f2937;
         color: #FFFFFF;
