@@ -24,7 +24,7 @@
 
 
 @media (prefers-color-scheme: dark) {
-    .card-body {
+    .card {
         background-color: #1f2937;
         color: #fff;
         border-color: #364050!important;}
