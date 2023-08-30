@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="925e46bb-e04a-4c1e-a871-f4a2a9295e73" name="Changes" comment="comit" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/DI_DC/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="f7cd141b-cb91-49f5-bf07-33b215e37855" />
+        <option name="url" value="https://github.com/catalinadancs/DI_DC.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="D:\Utilities\XAMPP\php\php.exe">
+    <include_path>
+      <path value="$PROJECT_DIR$/DI_DC/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/league/config" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/composer" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/league/flysystem-local" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/spatie/backtrace" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/spatie/ignition" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/spatie/flare-client-php" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/spatie/laravel-ignition" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/guzzlehttp/uri-template" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/laravel/breeze" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/laravel/prompts" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/laravel/pint" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/laravel/sail" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/nunomaduro/termwind" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/http-client" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/DI_DC/vendor/symfony/mailgun-mailer" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="2UOQa4Kzsh7aJsFoWGnUi2ZHtkL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Utilities/XAMPP/htdocs/aplicatia&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="925e46bb-e04a-4c1e-a871-f4a2a9295e73" name="Changes" comment="" />
+      <created>1692808206942</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692808206942</updated>
+      <workItem from="1692808208773" duration="13887000" />
+      <workItem from="1692962104404" duration="96000" />
+      <workItem from="1692962230667" duration="7565000" />
+      <workItem from="1693000079507" duration="17270000" />
+    </task>
+    <task id="LOCAL-00001" summary="comit cu email care merge">
+      <option name="closed" value="true" />
+      <created>1692964899668</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1692964899668</updated>
+    </task>
+    <task id="LOCAL-00002" summary="comit cu reset password">
+      <option name="closed" value="true" />
+      <created>1692999801726</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1692999801726</updated>
+    </task>
+    <task id="LOCAL-00003" summary="comit cu reset password">
+      <option name="closed" value="true" />
+      <created>1693005346463</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693005346463</updated>
+    </task>
+    <task id="LOCAL-00004" summary="comit">
+      <option name="closed" value="true" />
+      <created>1693246744595</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693246744595</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/Ionut" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="comit cu email care merge" />
+    <MESSAGE value="comit cu reset password" />
+    <MESSAGE value="comit" />
+    <option name="LAST_COMMIT_MESSAGE" value="comit" />
+  </component>
+</project>
