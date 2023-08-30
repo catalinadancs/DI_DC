@@ -26,4 +26,9 @@ class FacturaFirma extends Model
     {
         return $this->belongsTo(Firma::class);
     }
+
+    public function produse()
+    {
+        return $this->hasMany(Produs::class);
+    }
 }
