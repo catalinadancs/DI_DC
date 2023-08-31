@@ -1,4 +1,61 @@
-<x-app-layout>
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adaugare Produs/Serviciu</title>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Add jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Add Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</head>
+
+
+
+
+
+
+<body>
+    <x-app-layout>
+    <style>
+@media (prefers-color-scheme: dark) {
+
+
+    .form-control {
+            color: #fff !important; /* Set the text color */
+            background-color: #111827 !important;
+            border-color: #999 !important;
+        }
+
+        .form-control::placeholder {
+        color: #fff !important;
+        opacity: 0.6!important;
+        }
+
+        .container {
+            color: #fff !important; /* Set the text color */
+            background-color: #1f2937 !important;
+            border-color: #777 !important;
+        }
+
+
+}
+@media (prefers-color-scheme: light) {
+
+}
+</style>
+
+
+
+
+
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <div class="container">
     <div class="container">
@@ -21,9 +78,12 @@
                     </div>
                     <form method="post" action="{{route('produs.store')}}">
                         @csrf
-                        <div>
+                        <div class="mb-3">
                             <label for="tip" class="form-label">Tip</label>
-                            <input type="text" class="form-control" id="tip" name="tip" placeholder="Produs/Serviciu" required />
+                            <select name="tip" id="tip">
+                                <option value="produs">Produs</option>
+                                <option value="serviciu">Serviciu</option>
+                            </select>
                         </div>
                         <div>
                             <label for="denumire" class="form-label">Denumire</label>
@@ -63,3 +123,6 @@
         </div>
     </div>
 </x-app-layout>
+</body>
+
+</html>
