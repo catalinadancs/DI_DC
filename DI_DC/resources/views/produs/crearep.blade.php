@@ -43,6 +43,12 @@
             background-color: #1f2937 !important;
             border-color: #777 !important;
         }
+        select#tip option[value="Produs"],
+    select#tip option[value="Serviciu"],
+    select#tip {
+        color: #fff !important; /* Set the text color */
+        background-color: #111827 !important; /* Set the background color */
+    }
 
 
 }
