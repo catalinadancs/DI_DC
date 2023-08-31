@@ -23,4 +23,9 @@ class FacturaClient extends Model
     {
         return $this->belongsTo(Client::class);
     }
+
+    public function produse()
+    {
+        return $this->hasMany(Produs::class);
+    }
 }

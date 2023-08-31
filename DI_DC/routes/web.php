@@ -7,6 +7,7 @@ use App\Http\Controllers\ClientController;
 use App\Http\Controllers\FirmaController;
 use App\Http\Controllers\FacturaClientController;
 use App\Http\Controllers\FacturaFirmaController;
+use App\Http\Controllers\SPFacturaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -80,7 +81,7 @@ Route::post('form_produs',[ProdusController::class,'store'])->name('produs.store
 //Route::middleware(['web'])->post('form_produs', 'ProdusController@produs.store');
 
 Route::get('/firma',[FirmaController::class,'index'])->name('firma.index');
-Route::get('/client/adaugaref',[FirmaController::Class,'creare'])->name('firma.create');
+Route::get('/client/adaugaref',[FirmaController::class,'creare'])->name('firma.create');
 Route::post('/firma',[FirmaController::class,'store'])->name('firma.store');
 
 Route::post('factura/crearefacturac',[FacturaClientController::class,'store'])->name('facturac.store');
@@ -89,6 +90,9 @@ Route::post('factura/crearefacturaf',[FacturaFirmaController::class,'store'])->n
 Route::get('/furnizor', [SettingsController::class, 'index'])->name('furnizor');
 Route::post('/furnizor',[SettingsController::class,'store'])->name('settings.store');
 
+//Route::post('/factura/crearefacturacc',[SPFacturaController::class,'store'])->name('product-store');
+Route::post('factura/spfstore', [SPFacturaController::class, 'store'])->name('spfprodus.store');
+//Route::post('factura/crearefacturaf', [SPFacturaController::class, 'store'])->name('spfprodus.store');
 Route::get('/factura/index', function () {
     return view('factura/index');
 });
