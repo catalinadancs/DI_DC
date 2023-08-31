@@ -35,6 +35,17 @@
                 background-color: #1f2937 !important;
                 border-color: #777 !important;
             }
+            input#data_emitere option[value="date"],
+    input#data_scadenta option[value="date"],
+    input#data_emitere,
+    input#data_scadenta,
+    input#denumire,
+    input#cantitate,
+    select#status,
+    select#tip {
+        color: #fff !important; /* Set the text color */
+        background-color: #111827 !important; /* Set the background color */
+    }
 
 
         }
