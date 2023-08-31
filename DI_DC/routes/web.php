@@ -51,6 +51,10 @@ Route::get('/aboutus', function () {
     return view('aboutus');
 });
 
+Route::get('/curs-valutar', function () {
+    return view('cursvalutar');
+});
+
 //Route::match(['get', 'post'], '/furnizor', [FurnizorController::class, 'dataa'])->name('furnizor');
 
 Route::get('/furnizor', [SettingsController::class, 'index'])->name('furnizor');

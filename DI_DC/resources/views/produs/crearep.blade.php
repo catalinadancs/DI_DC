@@ -66,7 +66,7 @@
     <div class="container">
     <div class="container">
         <div class="flex items-center gap-4 mt-4">
-            <a href="{{ route('produs.index') }}" class="btn btn-primary">Back</a>
+            <a href="{{ route('produs.index') }}" class="btn btn-secondary">Back</a>
         </div>
         @csrf
         <div class="row pt-3">
