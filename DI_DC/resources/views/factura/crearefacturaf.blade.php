@@ -53,7 +53,13 @@
                     <div class="card-body">
                         
                         <div>
-                            
+                            @if($errors->any())
+                            <ul>
+                                @foreach($errors->all() as $err)
+                                <li>{{$err}}</li>
+                                @endforeach
+                            </ul>
+                            @endif
                         </div>
                         <form method="post" action="{{route('facturaf.store')}}">
                             @csrf
