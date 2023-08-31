@@ -32,8 +32,7 @@ class ClientController extends Controller
             'cnp' => 'required|size:13',
             'adresa' => 'required',
             'banca' => 'required',
-            'iban' => 'required|size:24',
-            'status' => 'required'
+            'iban' => 'required|size:24'
         ]);
 
         $newClient = Client::create($data);

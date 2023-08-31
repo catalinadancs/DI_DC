@@ -78,9 +78,12 @@
                     </div>
                     <form method="post" action="{{route('produs.store')}}">
                         @csrf
-                        <div>
+                        <div class="mb-3">
                             <label for="tip" class="form-label">Tip</label>
-                            <input type="text" class="form-control" id="tip" name="tip" placeholder="Produs/Serviciu" required />
+                            <select name="tip" id="tip">
+                                <option value="produs">Produs</option>
+                                <option value="serviciu">Serviciu</option>
+                            </select>
                         </div>
                         <div>
                             <label for="denumire" class="form-label">Denumire</label>

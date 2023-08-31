@@ -13,18 +13,18 @@ return new class extends Migration
     {
         Schema::create('sp_factura', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('id_factura');
-            $table->foreign('id_factura')->references('id')->on('factura');
+            $table->unsignedBigInteger('id_facturac')->nullable();
+            $table->unsignedBigInteger('id_facturaf')->nullable();
             $table->unsignedBigInteger('id_produs');
-            $table->foreign('id_produs')->references('id')->on('produs');
+            
             $table->double('pret_produs', 10, 2)->unsigned();
+            $table->double('pret_tva',10,2)->unsigned();
             $table->integer('cantitate_produs')->unsigned();
-            $table->dateTime('data_factura');
+
+            $table->foreign('id_facturac')->references('id')->on('facturac');
+            $table->foreign('id_facturaf')->references('id')->on('facturaf');
+            $table->foreign('id_produs')->references('id')->on('produs');
             $table->timestamps();
-            /*
-            $table->integer('user_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('users');
-            */
         });
     }
 

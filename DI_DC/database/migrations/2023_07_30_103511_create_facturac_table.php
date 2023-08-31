@@ -11,8 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('factura', function (Blueprint $table) {
+        Schema::create('facturac', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('id_client');
+            $table->foreign('id_client')->references('id')->on('client');
             $table->char('serie', 1);
             $table->dateTime('data_emitere');
             $table->dateTime('data_scadenta');
@@ -26,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('factura');
+        Schema::dropIfExists('facturac');
     }
 };
