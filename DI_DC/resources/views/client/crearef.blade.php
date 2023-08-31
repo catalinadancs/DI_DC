@@ -1,34 +1,39 @@
 <x-app-layout>
-<style>
-            @media (prefers-color-scheme: dark) {
+    <style>
+        @media (prefers-color-scheme: dark) {
 
 
-                .form-control {
-                    color: #fff !important;
-                    /* Set the text color */
-                    background-color: #111827 !important;
-                    border-color: #999 !important;
-                }
-
-                .form-control::placeholder {
-                    color: #fff !important;
-                    opacity: 0.6 !important;
-                }
-
-                .container {
-                    color: #fff !important;
-                    /* Set the text color */
-                    background-color: #1f2937 !important;
-                    border-color: #777 !important;
-                }
-
-
+            .form-control {
+                color: #fff !important;
+                /* Set the text color */
+                background-color: #111827 !important;
+                border-color: #999 !important;
             }
 
-            @media (prefers-color-scheme: light) {}
-        </style>
+            .form-control::placeholder {
+                color: #fff !important;
+                opacity: 0.6 !important;
+            }
+
+            .container {
+                color: #fff !important;
+                /* Set the text color */
+                background-color: #1f2937 !important;
+                border-color: #777 !important;
+            }
+
+
+        }
+
+        @media (prefers-color-scheme: light) {}
+    </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <div class="container">
+        <div>
+            <div class="flex items-center gap-4 mt-4">
+                <a href="{{ route('client.index') }}" class="btn btn-secondary">Back</a>
+            </div>
+        </div>
         @csrf
         <div class="row pt-3">
             <div class="col">

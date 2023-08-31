@@ -100,7 +100,7 @@
         <button class="btn btn-light">Vizualizare facturi</button>
       </div>
       <div class="col">
-        <button class="btn btn-light">Curs valutar</button>
+      <a href="{{ url('/curs-valutar') }}" class="btn btn-light">Curs valutar</a>
       </div>
     </div>
   </div>
