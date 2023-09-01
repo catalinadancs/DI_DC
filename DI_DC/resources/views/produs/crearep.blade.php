@@ -43,6 +43,12 @@
             background-color: #1f2937 !important;
             border-color: #777 !important;
         }
+        select#tip option[value="Produs"],
+    select#tip option[value="Serviciu"],
+    select#tip {
+        color: #fff !important; /* Set the text color */
+        background-color: #111827 !important; /* Set the background color */
+    }
 
 
 }
@@ -60,7 +66,7 @@
     <div class="container">
     <div class="container">
         <div class="flex items-center gap-4 mt-4">
-            <a href="{{ route('produs.index') }}" class="btn btn-primary">Back</a>
+            <a href="{{ route('produs.index') }}" class="btn btn-secondary">Back</a>
         </div>
         @csrf
         <div class="row pt-3">

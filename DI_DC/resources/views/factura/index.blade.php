@@ -21,6 +21,8 @@
     <x-app-layout>
 
         <div class="container">
+            <a href="{{ url('factura') }}" class="btn btn-secondary">Back</a>
+
             <a href="{{url('/factura/crearefc')}}" class="btn btn-primary">Adaugare factura - PFA</a>
             <a href="{{url('/factura/creareff')}}" class="btn btn-primary">Adaugare factura - SRL</a>
         </div>

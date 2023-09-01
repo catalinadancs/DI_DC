@@ -19,33 +19,34 @@
 <body>
     <x-app-layout>
 
-    <style>
+        <style>
+            @media (prefers-color-scheme: dark) {
 
 
-@media (prefers-color-scheme: dark) {
+                th,
+                td {
+                    color: #fff !important;
+                    /* Set the text color */
+                    background-color: #1f2937 !important;
+                    border-color: #777 !important;
+                }
+
+                h2 {
+                    color: #fff !important;
+                    /* Set the text color */
+
+                    border-color: #777 !important;
+                }
 
 
-    th,
-    td {
-        color: #fff !important; /* Set the text color */
-            background-color: #1f2937 !important;
-            border-color: #777 !important;
-    }
-    h2 {
-            color: #fff !important; /* Set the text color */
-            
-            border-color: #777 !important;
-        }
+            }
 
-
-}
-@media (prefers-color-scheme: light) {
-   
-    }
-    </style>
+            @media (prefers-color-scheme: light) {}
+        </style>
 
 
         <div class="container mt-3">
+            <a href="{{ url('bazadate') }}" class="btn btn-secondary">Back</a>
             <a href="{{route('produs.create')}}" class="btn btn-primary">Adaugare produs/serviciu</a>
         </div>
         <div class="container mt-3">

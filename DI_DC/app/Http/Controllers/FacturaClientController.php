@@ -41,5 +41,9 @@ class FacturaClientController extends Controller
         $factura->save();
 
         //$data['id_client'] = $client->id; 
+
+        //$data['id_client'] = $client->id; 
+
+        return view('factura/crearefacturac');
     }
 }

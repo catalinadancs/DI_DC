@@ -18,32 +18,35 @@
 
 <body>
     <x-app-layout>
-    <style>
+        <style>
+            @media (prefers-color-scheme: dark) {
 
 
-@media (prefers-color-scheme: dark) {
+                th,
+                td {
+                    color: #fff !important;
+                    /* Set the text color */
+                    background-color: #1f2937 !important;
+                    border-color: #777 !important;
+                }
+
+                h2 {
+                    color: #fff !important;
+                    /* Set the text color */
+
+                    border-color: #777 !important;
+                }
 
 
-    th,
-    td {
-        color: #fff !important; /* Set the text color */
-            background-color: #1f2937 !important;
-            border-color: #777 !important;
-    }
-    h2 {
-            color: #fff !important; /* Set the text color */
-            
-            border-color: #777 !important;
-        }
+            }
 
-
-}
-@media (prefers-color-scheme: light) {
-   
-    }
-    </style>
+            @media (prefers-color-scheme: light) {}
+        </style>
 
         <div class="container">
+
+            <a href="{{ url('bazadate') }}" class="btn btn-secondary">Back</a>
+
             <a href="{{route('client.create')}}" class="btn btn-primary">Adaugare client - PFA</a>
             <a href="{{route('firma.create')}}" class="btn btn-primary">Adaugare client - SRL</a>
         </div>

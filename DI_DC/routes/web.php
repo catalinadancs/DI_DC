@@ -51,7 +51,7 @@ Route::get('/aboutus', function () {
     return view('aboutus');
 });
 
-Route::get('/cursvalutar', function(){
+Route::get('/curs-valutar', function(){
     return view('cursvalutar');
 });
 
@@ -94,16 +94,10 @@ Route::post('factura/creareff',[FacturaFirmaController::class,'store'])->name('f
 Route::get('/furnizor', [SettingsController::class, 'index'])->name('furnizor');
 Route::post('/furnizor',[SettingsController::class,'store'])->name('settings.store');
 
-<<<<<<< Updated upstream
 //Route::post('/factura/crearefacturacc',[SPFacturaController::class,'store'])->name('product-store');
 //Route::get('/factura/index',[SPFacturaController::class,'index'])->name('produsf.index');
 Route::post('factura/produsf', [SPFacturaController::class, 'store'])->name('produsf.store');
 //Route::post('factura/crearefacturaf', [SPFacturaController::class, 'store'])->name('spfprodus.store');
-=======
-Route::post('/factura/crearefacturac',[SPFacturaController::class,'store'])->name('spfprodus.store');
-//Route::post('factura/spfstore', [SPFacturaController::class, 'store'])->name('spfprodus.store');
-Route::post('factura/crearefacturaf', [SPFacturaController::class, 'store'])->name('spfprodus.store');
->>>>>>> Stashed changes
 Route::get('/factura/index', function () {
     return view('factura/index');
 });

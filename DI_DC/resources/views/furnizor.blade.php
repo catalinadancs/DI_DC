@@ -36,6 +36,13 @@
                 border-color: #777 !important;
             }
 
+            select#status option[value="pfa"],
+    select#status option[value="srl"],
+    select#status {
+        color: #fff !important; /* Set the text color */
+        background-color: #111827 !important; /* Set the background color */
+    }
+
 
         }
 
