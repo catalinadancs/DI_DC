@@ -85,7 +85,7 @@ Route::post('form_produs',[ProdusController::class,'store'])->name('produs.store
 //Route::middleware(['web'])->post('form_produs', 'ProdusController@produs.store');
 
 Route::get('/firma',[FirmaController::class,'index'])->name('firma.index');
-Route::get('/client/adaugaref',[FirmaController::Class,'creare'])->name('firma.create');
+Route::get('/client/adaugaref',[FirmaController::class,'creare'])->name('firma.create');
 Route::post('/firma',[FirmaController::class,'store'])->name('firma.store');
 
 Route::post('factura/crearefc',[FacturaClientController::class,'store'])->name('facturac.store');
