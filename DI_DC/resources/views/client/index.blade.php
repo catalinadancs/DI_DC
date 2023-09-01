@@ -43,11 +43,6 @@
             @media (prefers-color-scheme: light) {}
         </style>
 
-
-
-
-
-
         <div class="container">
 
             <a href="{{ url('bazadate') }}" class="btn btn-secondary">Back</a>
@@ -56,7 +51,7 @@
             <a href="{{route('firma.create')}}" class="btn btn-primary">Adaugare client - SRL</a>
         </div>
         <div class="container mt-3">
-            <h2>Lista clientilor</h2>
+            <h2>Lista clientilor PFA</h2>
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -89,7 +84,7 @@
                 </tbody>
             </table>
         </div>
-
+        <!--  -->
     </x-app-layout>
 </body>
 

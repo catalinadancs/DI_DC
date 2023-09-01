@@ -42,6 +42,8 @@ class FacturaClientController extends Controller
 
         //$data['id_client'] = $client->id; 
 
+        //$data['id_client'] = $client->id; 
+
         return view('factura/crearefacturac');
     }
 }

@@ -42,6 +42,10 @@ class FacturaFirmaController extends Controller
         $factura->status=$data['status'];
         $factura->save();
 
+
+        
+
         return view('factura/crearefacturaf');
+
     }
 }
