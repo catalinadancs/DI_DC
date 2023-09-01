@@ -12,6 +12,13 @@ class FirmaController extends Controller
         return view('client.index');
     }
 
+    /* public function index()
+    {
+        $firme = Firma::all();
+
+        return view('client.index', compact('firme'));
+    } */
+
     public function creare(){
         return view('client.crearef');
     }

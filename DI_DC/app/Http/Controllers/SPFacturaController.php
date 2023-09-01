@@ -13,12 +13,25 @@ use App\Models\Produs;
 class SPFacturaController extends Controller
 {
     //
+    public function index(){
+        return view('factura.produsf');
+    }
+
+    public function creare(){
+        return view('factura.index');
+    }
+
     public function store(Request $request){
         /* $validatedData = $request->validate([
             'nume'=>'required',
             'data'=>'required'
         ]); */
-        $validatedData = $request->all();
+        $validatedData =$request-> validate([
+            'denumire'=>'required',
+            'tip'=>'required',
+            'cantitate'=>'required',
+            'nume'=>'required'
+        ]);
         //dd($validatedData);
         $numeC=$validatedData['nume'];
         $client=Client::where('nume',$numeC)->first();
@@ -33,13 +46,7 @@ class SPFacturaController extends Controller
             $idfacc=null;
         }
         
-        $tableRows = $validatedData['data'];
-        //dd($tableRows);
-
-        foreach ($tableRows as $rowData) {
-            $jsonData = json_decode($rowData);
-            $numep=$jsonData[0];
-            //dd($numep);
+            $numep=$validatedData['denumire'];
             $p=Produs::where('denumire',$numep)->first();
             $idp=$p->id;
             $pret=$p->pret_unitar;
@@ -52,14 +59,17 @@ class SPFacturaController extends Controller
             $produsF->id_produs=$idp;
             $produsF->pret_produs=$pret;
             $produsF->pret_tva=$ptva;
-            $produsF->cantitate_produs=$jsonData[2];
+            $produsF->cantitate_produs=$validatedData['cantitate'];
 
             $x=$p->cantitate;
             $p->cantitate=$x-$produsF->cantitate_produs;
-            dd($produsF);
+            $p->save();
+            //dd($produsF);
             $produsF->save();
 
-        }
+            return view('/factura/index');
+
+        
 
     }
 }
