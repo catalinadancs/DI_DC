@@ -72,13 +72,7 @@
                         <p>Utilizare placubila.</p>
                         <form method="post" action="{{route('settings.store')}}">
                             @csrf
-                            <div class="mb-3">
-                                <label for="status" class="form-label">Status client</label>
-                                <select name="status" id="status">
-                                    <option value="pfa">PFA</option>
-                                    <option value="srl">SRL</option>
-                                </select>
-                            </div>
+                            
                             <div class="mb-3">
                                 <label for="nume" class="form-label">Nume</label>
                                 <input type="text" class="form-control" id="nume" name="nume" placeholder="Nume" required />

@@ -41,4 +41,6 @@ class SettingsController extends Controller
     
         return view('dashboard');
     }
-}
+
+    
+    }
