@@ -63,6 +63,7 @@ class SPFacturaController extends Controller
 
             $x=$p->cantitate;
             $p->cantitate=$x-$produsF->cantitate_produs;
+<<<<<<< Updated upstream
             $p->save();
             //dd($produsF);
             $produsF->save();
@@ -70,6 +71,13 @@ class SPFacturaController extends Controller
             return view('/factura/index');
 
         
+=======
+            //dd($produsF);
+            $produsF->save();
+
+            return view('factura/index');
+        }
+>>>>>>> Stashed changes
 
     }
 }

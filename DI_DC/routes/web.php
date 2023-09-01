@@ -88,16 +88,22 @@ Route::get('/firma',[FirmaController::class,'index'])->name('firma.index');
 Route::get('/client/adaugaref',[FirmaController::Class,'creare'])->name('firma.create');
 Route::post('/firma',[FirmaController::class,'store'])->name('firma.store');
 
-Route::post('factura/crearefacturac',[FacturaClientController::class,'store'])->name('facturac.store');
-Route::post('factura/crearefacturaf',[FacturaFirmaController::class,'store'])->name('facturaf.store');
+Route::post('factura/crearefc',[FacturaClientController::class,'store'])->name('facturac.store');
+Route::post('factura/creareff',[FacturaFirmaController::class,'store'])->name('facturaf.store');
 
 Route::get('/furnizor', [SettingsController::class, 'index'])->name('furnizor');
 Route::post('/furnizor',[SettingsController::class,'store'])->name('settings.store');
 
+<<<<<<< Updated upstream
 //Route::post('/factura/crearefacturacc',[SPFacturaController::class,'store'])->name('product-store');
 //Route::get('/factura/index',[SPFacturaController::class,'index'])->name('produsf.index');
 Route::post('factura/produsf', [SPFacturaController::class, 'store'])->name('produsf.store');
 //Route::post('factura/crearefacturaf', [SPFacturaController::class, 'store'])->name('spfprodus.store');
+=======
+Route::post('/factura/crearefacturac',[SPFacturaController::class,'store'])->name('spfprodus.store');
+//Route::post('factura/spfstore', [SPFacturaController::class, 'store'])->name('spfprodus.store');
+Route::post('factura/crearefacturaf', [SPFacturaController::class, 'store'])->name('spfprodus.store');
+>>>>>>> Stashed changes
 Route::get('/factura/index', function () {
     return view('factura/index');
 });
