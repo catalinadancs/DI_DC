@@ -21,7 +21,6 @@ class Client extends Model
         'cnp',
         'adresa',
         'banca',
-        'iban',
-        'status'
+        'iban'
     ];
 }
