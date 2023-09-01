@@ -8,7 +8,9 @@ use App\Http\Controllers\FirmaController;
 use App\Http\Controllers\FacturaClientController;
 use App\Http\Controllers\FacturaFirmaController;
 use App\Http\Controllers\SPFacturaController;
+use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -121,6 +123,17 @@ Route::get('/create_factura', function () {
     return view('create_factura');
 });
 
+Route::get('/orders', [OrderController::class, 'index']);
+Route::get('/orders2', [OrderController::class, 'index2']);
+Route::get('/orders3', [OrderController::class, 'index3']);
+Route::get('/download-orders', [OrderController::class, 'downloadPDF']);
+Route::get('/download-orders2', [OrderController::class, 'downloadPDF2']);
+Route::get('/download-orders3', [OrderController::class, 'downloadPDF3']);
+Route::get('/pdf/order', function(){
+    return view('pdf.order');
+});
+
 Route::get('/send-mail', [App\Http\Controllers\EmailController::class, 'sendEmail']);
 
 require __DIR__.'/auth.php';
+
