@@ -60,110 +60,26 @@
                                 </div>
 
                                 <div class="items">
-
-                                <h3>Lista de produse</h3>
-                        <div class="mb-3">
-                            <label for="denumire" class="form-label">Denumire</label>
-                            <input type="text" id="denumire" name="denumire" required />
-                        </div>
-                        <div class="mb-3">
-                            <label for="tip" class="form-label">Tip</label>
-                            <select name="tip" id="tip">
-                                <option value="produs">Produs</option>
-                                <option value="serviciu">Serviciu</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="cantitate">Cantitate</label>
-                            <input type="number" name="cantitate" id="cantitate" min="1" value="1" required>
-                        </div>
-                        <div class="mb-3">
-                            <button type="button" id="addRowBtn" class="btn btn-primary">Add to Table</button>
-                        </div>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>Denumire</th>
-                                    <th>Tip</th>
-                                    <th>Cantitate</th>
-                                    <th>Nume Firma</th>
-                                </tr>
-                            </thead>
-                            <tbody id="tableBody">
-                                <!-- Table rows will be added dynamically here -->
-                            </tbody>
-                        </table>
-     
-                                
-                            </div>
-
-                                </div>
-
-                    <div>
-                        <button class="btn btn-success" type="submit">Trimite</button>
+                                <div>
+                        <button id="save-button" class="btn btn-success" type="submit">Trimite</button>
                     </div>
                 </form>
+                <br>
+                <h3>Lista de produse</h3>
 
-                <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const addRowBtn = document.getElementById('addRowBtn');
-        const tableBody = document.getElementById('tableBody');
+                <p>
+                    Pentru inceput se vor adauga datele pe factura.
+                    <br> Dupa care se va reveni la pagina facturii prin sageata back din browser.
+                    <br> Apoi se va apasa butonul de adaugare produse pentru factura curenta.
+                    <br> Se va repeta acest proces pentru fiecare produs in parte.
+                </p>  
+                
+                <br>
 
-        addRowBtn.addEventListener('click', function () {
-    const denumire = document.getElementById('denumire').value;
-    const tip = document.getElementById('tip').value;
-    const cantitate = document.getElementById('cantitate').value;
-    const nume = document.getElementById('nume').value;
-
-    const newRow = `
-        <tr>
-            <td>${denumire}</td>
-            <td>${tip}</td>
-            <td>${cantitate}</td>
-            <td>${nume}</td>
-        </tr>
-    `;
-
-    tableBody.innerHTML += newRow;
-
-    // Create hidden input fields for each row's data
-    const hiddenInput = document.createElement('input');
-    hiddenInput.type = 'hidden';
-    hiddenInput.name = 'data[]'; // This name should match what you're expecting in the controller
-    hiddenInput.value = JSON.stringify([denumire, tip, cantitate, nume]);
-    tableBody.appendChild(hiddenInput);
-});
-
-    });
-</script>
-
-                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-    $(document).ready(function() {
-    $('#save-button').click(function() {
-        var tableData = [];
-
-        // Iterate through each row in the table
-        $('#tableBody tr').each(function() {
-            var rowData = [];
-            $(this).find('td').each(function() {
-                rowData.push($(this).text()); // You can adjust this based on your cell content
-            });
-            tableData.push(rowData);
-        });
-
-        // Send table data to the server using AJAX
-        $.post('{{ route('spfprodus.store') }}', { data: tableData }, function(response) {
-            if (response.success) {
-                $('#message').text('Data saved successfully!');
-            } else {
-                $('#message').text('An error occurred while saving data.');
-            }
-        });
-    });
-});
-
-</script>
+                <div class="col">
+                    <a href="{{ url('/factura/produsf') }}" class="btn btn-light">Adauga produse</a>
+                        <!-- <button class="btn btn-light">Clienți</button> -->
+                </div>
 
             </div>
         </div>

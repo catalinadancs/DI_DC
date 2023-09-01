@@ -43,17 +43,12 @@
     }
     </style>
 
-
-
-
-
-
         <div class="container">
             <a href="{{route('client.create')}}" class="btn btn-primary">Adaugare client - PFA</a>
             <a href="{{route('firma.create')}}" class="btn btn-primary">Adaugare client - SRL</a>
         </div>
         <div class="container mt-3">
-            <h2>Lista clientilor</h2>
+            <h2>Lista clientilor PFA</h2>
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -86,7 +81,7 @@
                 </tbody>
             </table>
         </div>
-
+        <!--  -->
     </x-app-layout>
 </body>
 

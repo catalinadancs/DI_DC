@@ -51,6 +51,10 @@ Route::get('/aboutus', function () {
     return view('aboutus');
 });
 
+Route::get('/cursvalutar', function(){
+    return view('cursvalutar');
+});
+
 //Route::match(['get', 'post'], '/furnizor', [FurnizorController::class, 'dataa'])->name('furnizor');
 
 Route::get('/furnizor', [SettingsController::class, 'index'])->name('furnizor');
@@ -91,7 +95,8 @@ Route::get('/furnizor', [SettingsController::class, 'index'])->name('furnizor');
 Route::post('/furnizor',[SettingsController::class,'store'])->name('settings.store');
 
 //Route::post('/factura/crearefacturacc',[SPFacturaController::class,'store'])->name('product-store');
-Route::post('factura/spfstore', [SPFacturaController::class, 'store'])->name('spfprodus.store');
+//Route::get('/factura/index',[SPFacturaController::class,'index'])->name('produsf.index');
+Route::post('factura/produsf', [SPFacturaController::class, 'store'])->name('produsf.store');
 //Route::post('factura/crearefacturaf', [SPFacturaController::class, 'store'])->name('spfprodus.store');
 Route::get('/factura/index', function () {
     return view('factura/index');
@@ -100,6 +105,11 @@ Route::get('/factura/index', function () {
 Route::get('/factura/crearefc', function () {
     return view('factura/crearefacturac');
 });
+
+Route::get('/factura/produsf', function () {
+    return view('factura.produsf');
+});
+
 
 Route::get('/factura/creareff', function () {
     return view('factura/crearefacturaf');
